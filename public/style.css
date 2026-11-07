@@ -1,0 +1,186 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8f1;
+    color: #333;
+}
+
+header {
+    background: #24733b;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #174d2b;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b9f6ca;
+}
+
+.hero {
+    background: linear-gradient(120deg, #d9f2d0, #b6dfaa);
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero h2 {
+    color: #1c632e;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.shop-btn {
+    display: inline-block;
+    background: #24733b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+section {
+    padding: 35px 7%;
+}
+
+section h2 {
+    text-align: center;
+    color: #24733b;
+    margin-bottom: 25px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000015;
+    border-top: 4px solid #39944e;
+}
+
+.product-card h3 {
+    color: #24733b;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    margin: 8px 0;
+}
+
+button {
+    background: #24733b;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #174d2b;
+}
+
+.delete-btn {
+    background: #d93636;
+}
+
+.delete-btn:hover {
+    background: #a91e1e;
+}
+
+form {
+    background: white;
+    max-width: 550px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 7px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+#orderList {
+    max-width: 800px;
+    margin: auto;
+}
+
+.order-card {
+    background: white;
+    padding: 18px;
+    margin: 12px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+footer {
+    background: #174d2b;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    section {
+        padding: 25px 5%;
+    }
+}

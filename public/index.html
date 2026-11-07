@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashashvini Online Agriculture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌾 Yashashvini Online Agriculture</h1>
+        <p>Connecting Farmers and Customers</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#manage">Manage Products</a>
+        <a href="#orders">Orders</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Online Agriculture Marketplace</h2>
+        <p>Buy fresh agricultural products directly from farmers.</p>
+        <a href="#products" class="shop-btn">Explore Products</a>
+    </section>
+
+    <section id="products">
+        <h2>Available Products</h2>
+        <div id="productList" class="product-container">
+            Loading products...
+        </div>
+    </section>
+
+    <section id="manage">
+        <h2>Manage Products (Farmer)</h2>
+
+        <form id="productForm">
+            <input type="hidden" id="product_id">
+
+            <label>Farmer ID</label>
+            <input type="number" id="farmer_id" placeholder="Enter Farmer ID" required>
+
+            <label>Product Name</label>
+            <input type="text" id="product_name" placeholder="Enter Product Name" required>
+
+            <label>Category</label>
+            <select id="category" required>
+                <option value="">Select Category</option>
+                <option value="Grains">Grains</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Fruits">Fruits</option>
+                <option value="Pulses">Pulses</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Price (₹)</label>
+            <input type="number" id="price" placeholder="Enter Price" min="0.01" step="0.01" required>
+
+            <label>Quantity</label>
+            <input type="number" id="quantity" placeholder="Enter Quantity" min="0" required>
+
+            <label>Description</label>
+            <textarea id="description" placeholder="Enter Description"></textarea>
+
+            <button type="submit" id="saveBtn">Add Product</button>
+            <button type="button" id="resetBtn">Clear</button>
+        </form>
+    </section>
+
+    <section id="orders">
+        <h2>Place Your Order</h2>
+
+        <form id="orderForm">
+            <label>Customer ID</label>
+            <input type="number" id="customer_id" placeholder="Enter Customer ID" required>
+
+            <label>Select Product</label>
+            <select id="order_product" required>
+                <option value="">Select Product</option>
+            </select>
+
+            <label>Quantity</label>
+            <input type="number" id="order_quantity" min="1" placeholder="Enter Quantity" required>
+
+            <label>Delivery Address</label>
+            <textarea id="delivery_address" placeholder="Enter Delivery Address" required></textarea>
+
+            <button type="submit">Place Order</button>
+        </form>
+
+        <h2>Order Details</h2>
+        <div id="orderList">Loading orders...</div>
+    </section>
+
+    <footer>
+        <p>© 2026 Yashashvini Online Agriculture Marketplace</p>
+        <p>Supporting Farmers | Fresh Products | Happy Customers</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
